@@ -1,6 +1,6 @@
 "use strict"
 
-/random numbers generator
+//random numbers generator
 
 function* randomNumberGenerator() {
     while (true) {
