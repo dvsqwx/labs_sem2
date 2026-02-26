@@ -8,3 +8,15 @@ function* randomNumberGenerator() {
         yield num;
     }
 }
+
+const myIter = randomNumberGenerator();
+let count = 0;
+
+for (let num of myIter) {
+    console.log(num);
+    count++;
+
+    if (count === 3) {
+        break;
+    }
+}
