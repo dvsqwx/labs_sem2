@@ -10,3 +10,12 @@ function startProcessing(iterator, seconds) {
         count++;
         console.log(`num: ${nextValue} | total: ${total}`);
     }, 500);
+
+    setTimeout(() => {
+        clearInterval(intervalId);
+        console.log("timer done");
+    }, seconds * 1000);
+}
+
+const myIter = randomNumberGenerator();
+startProcessing(myIter, 5);
